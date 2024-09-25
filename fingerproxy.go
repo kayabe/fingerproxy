@@ -12,13 +12,13 @@ import (
 	"os/signal"
 	"syscall"
 
+	"github.com/kayabe/fingerproxy/pkg/certwatcher"
+	"github.com/kayabe/fingerproxy/pkg/debug"
+	"github.com/kayabe/fingerproxy/pkg/fingerprint"
+	"github.com/kayabe/fingerproxy/pkg/proxyserver"
+	"github.com/kayabe/fingerproxy/pkg/reverseproxy"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"github.com/wi1dcard/fingerproxy/pkg/certwatcher"
-	"github.com/wi1dcard/fingerproxy/pkg/debug"
-	"github.com/wi1dcard/fingerproxy/pkg/fingerprint"
-	"github.com/wi1dcard/fingerproxy/pkg/proxyserver"
-	"github.com/wi1dcard/fingerproxy/pkg/reverseproxy"
 )
 
 const logFlags = log.LstdFlags | log.Lshortfile | log.Lmsgprefix

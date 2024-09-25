@@ -26,7 +26,7 @@ build_%:
 
 	chmod +x $(BINPATH)
 
-PKG_LIST = $(shell go list ./... | grep -v github.com/wi1dcard/fingerproxy/pkg/http2)
+PKG_LIST = $(shell go list ./... | grep -v github.com/kayabe/fingerproxy/pkg/http2)
 test:
 	@go test -v $(PKG_LIST)
 

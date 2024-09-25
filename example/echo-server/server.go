@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/wi1dcard/fingerproxy/pkg/metadata"
+	"github.com/kayabe/fingerproxy/pkg/metadata"
 )
 
 func echoServer(w http.ResponseWriter, req *http.Request) {
