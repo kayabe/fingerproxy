@@ -27,7 +27,7 @@ Fingerproxy is also a Go library, which allows users implementing their own fing
       -addext "subjectAltName=DNS:localhost,DNS:*.localhost,IP:127.0.0.1"
     ```
 
-2. Download the [fingerproxy binary](https://github.com/wi1dcard/fingerproxy/releases) and run.
+2. Download the [fingerproxy binary](https://github.com/kayabe/fingerproxy/releases) and run.
     ```bash
     ./fingerproxy -listen-addr :8443 -forward-url https://httpbin.org
     ```
@@ -67,7 +67,7 @@ And of course, fingerproxy follows SemVer.
 
 ## Kubernetes and Prometheus Integration
 
-Kubernetes liveness probe support is available since [v0.3.0](https://github.com/wi1dcard/fingerproxy/releases/tag/v0.3.0). Example:
+Kubernetes liveness probe support is available since [v0.3.0](https://github.com/kayabe/fingerproxy/releases/tag/v0.3.0). Example:
 
 ```yaml
 apiVersion: v1

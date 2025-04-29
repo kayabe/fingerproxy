@@ -1,4 +1,4 @@
-module github.com/wi1dcard/fingerproxy
+module github.com/kayabe/fingerproxy
 
 go 1.21.7
 
